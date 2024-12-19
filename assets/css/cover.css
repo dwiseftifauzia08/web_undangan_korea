@@ -126,3 +126,124 @@ a:hover {
     background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
+
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.kotak1 {
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+
+.kotak1a {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.kotak1a img.pos-tl {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+}
+
+.kotak1a img.background {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.kotak1a-1 {
+    position: relative;
+    padding: 20px;
+}
+
+.details {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.couple {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.tanggal {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.tamu {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #666;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a47474;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+a:hover {
+    background-color: #d47474;
+}
+
+/* Media Query untuk perangkat mobile */
+@media (max-width: 600px) {
+    .kotak1a {
+        padding: 15px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+
+    .couple {
+        font-size: 24px;
+    }
+
+    .tanggal {
+        font-size: 16px;
+    }
+
+    .tamu {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .kotak1 img.pos-tl {
+        width: 40px;
+    }
+}
